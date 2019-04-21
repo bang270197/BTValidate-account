@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>u</title>
+</head>
+<body>
+<script>
+    function test(str) {
+        var regularExpression=/^[_a-z0-9]{6,}$/;
+        if (regularExpression.test(str)){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    var string1="123abc_";
+    var string2="_abc123";
+    var string3="______";
+    var string4="123456";
+    var string5="abcdefg";
+    ////////////////////////
+    var string6=".@";
+    var string7="12345";
+    var string8="1234_";
+    var string9="abcde ";
+    console.log(test(string8));
+</script>
+</body>
+</html>
